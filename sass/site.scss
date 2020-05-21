@@ -31,7 +31,10 @@ html, body {
 a, a:visited {
 	font-family: $tty0_monspace_font;
 	color: $tty0_link_colour;
-	text-decoration: none
+	text-decoration: none;
+	svg {
+		fill: $tty0_link_colour;
+	}
 }
 
 a:hover {
@@ -145,6 +148,15 @@ hr:nth-of-type(5n) {
 	bottom: 0;
 	height: 100%;
 	width: 100%;
+}
+
+.svg-icon svg {
+	display: inline-flex;
+	align-self: center;
+	top: .125em;
+	position: relative;
+	height:1em;
+	width:1em;
 }
 
 header {
@@ -511,5 +523,7 @@ span.big-text {
 		}
 	}
 }
+
+
 
 @import '_wavedrom_theme.scss';

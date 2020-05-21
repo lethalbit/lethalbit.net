@@ -1,0 +1,30 @@
+base_url = "https://lethalbit.net"
+title = "cat /dev/aki"
+description = "Various ramblings from Aki"
+sort_by = "date"
+default_language = "en"
+compile_sass = true
+highlight_code = true
+build_search_index = false
+paginate_by = 5
+taxonomies = [
+    {name = "categories", rss = true},
+    {name = "tags", rss = true},
+]
+generate_rss = true
+[extra]
+author = "Aki"
+
+fediverse_profile = "https://gensoukyou.jp.net/@lethalbit"
+twitter_profile = "lethalbit"
+github_profile = "lethalbit"
+
+enable_twitter_card = true
+
+# The menus to show in the header
+menus = [
+    {url = "https://github.com/lethalbit", name = "Github"},
+    {url = "https://twitter.com/lethalbit", name = "Twitter"},
+    {url = "https://gensoukyou.jp.net/@lethalbit", name = "Misskey"},
+
+]

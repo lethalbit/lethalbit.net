@@ -1,0 +1,69 @@
+svg {
+	text, tspan {
+		// color: $tty0_forground_primary !important;
+		fill: $tty0_forground_secondary !important;
+		font-family: $tty0_monspace_font !important;
+		font-weight: normal;
+	}
+
+	line {
+		stroke: $tty0_forground_secondary !important;
+	}
+
+
+
+	.muted {
+		fill: $tty0_forground_secondary !important;
+	}
+	.warning {
+		fill: $tty0_accent_3 !important;
+	}
+	.error {
+		fill: $tty0_accent_1 !important;
+	}
+	.info {
+		fill: $tty0_accent_2 !important;
+	}
+	.success {
+		fill: $tty0_accent_4 !important;
+	}
+
+	.s1, .s2, .s3, .s4, .s5,.s9 {
+		color: $tty0_forground_primary !important;
+		stroke: $tty0_forground_primary !important;
+	}
+
+	.s9 {
+		fill: $tty0_forground_primary !important;
+
+	}
+
+	.s6 {
+		fill: $tty0_accent_3 !important;
+		color: $tty0_accent_3 !important;
+		stoke-width: 0;
+	}
+
+	.s7 {
+		fill: $tty0_accent_1 !important;
+		color: $tty0_accent_1 !important;
+		stoke-width: 0;
+	}
+
+	.s8 {
+		fill: $tty0_accent_2 !important;
+		color: $tty0_accent_2 !important;
+		stoke-width: 0;
+	}
+
+	.s10 {
+		fill: $tty0_accent_5 !important;
+		color: $tty0_accent_5 !important;
+		stoke-width: 0;
+
+	}
+
+	path[id*="gmark_"]  {
+		stroke:  $tty0_forground_primary !important;
+	}
+}

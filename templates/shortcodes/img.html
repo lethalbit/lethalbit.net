@@ -1,0 +1,6 @@
+<div class="image-container">
+	<img src="{{ get_url(path=name) }}" alt="{% if alt %}{{ alt }}{% else %}{{ get_url(path=name) }}{% endif %}">
+	{% if caption %}
+		<small class="caption">{{ caption }}</small>
+	{% endif %}
+</div>

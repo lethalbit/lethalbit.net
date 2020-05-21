@@ -1,0 +1,33 @@
+{% extends "index.html" %}
+{% block title %}{{ page.title }}: {% endblock title %}
+{% block twitter_card %}
+	<meta name="twitter:card" content="sumary_large_image" >
+	<meta name="twitter:creator" content="{{ config.extra.twitter_profile | safe }}" >
+	<meta name="twitter:title" content="{{ page.title | safe }} {{ config.title | safe }}" >
+	<meta name="twitter:description" conent="{{ page.extra.description | safe}}">
+	{% if page.extra.banner_img %}
+	<meta name="twitter:image" content="{{ get_url(path=page.extra.banner_img) | safe }}">
+	{% endif %}
+{% endblock twitter_card %}
+
+{% block content %}
+<article class="">
+	{% if page.extra.banner_img %}
+		<div class="cover-image">
+			<img class="cover" src="{{ page.extra.banner_img | safe }}" alt="">
+			{% if page.extra.banner_src %}
+				<small class="cover-source">Cover Image: {{ page.extra.banner_src | safe }}</small>
+			{% endif %}
+		</div>
+	{% endif %}
+
+	<div class="article-title">
+		<h2>{{ page.title }}</h2>
+		<small>{{ page.date | date(timezone="America/New_York", format="%Y-%m-%d @ %H:%M") }} | Approx {{ page.reading_time }} minute read</small>
+	</div>
+	<div class="article-content">
+		{{ page.content | safe }}
+	</div>
+
+</article>
+{% endblock content %}

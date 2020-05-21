@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="{{ config.description }}">
+
+	<link rel="stylesheet" href="">
+
+	{% if config.extra.fediverse_profile %}
+		<link rel="me" href="{{ config.extra.fediverse_profile | safe }}">
+	{% endif %}
+
+	{% if config.extra.twitter_profile %}
+		<link rel="me" href="https://twitter.com/{{ config.extra.twitter_profile | safe }}">
+	{% endif %}
+
+	{% if config.extra.github_profile %}
+		<link rel="me" href="https://github.com/{{ config.extra.github_profile | safe }}">
+	{% endif %}
+
+	{% block css %}
+		<link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) | safe }}">
+	{% endblock css %}
+
+	{% if config.generate_rss %}
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") | safe }}" title="{{ config.title }} - Latest Posts">
+	{% endif %}
+
+	{% if config.extra.enable_twitter_card %}
+		{% block twitter_card %}
+			<meta name="twitter:card" content="sumary_large_image" >
+			<meta name="twitter:creator" content="{{ config.extra.twitter_profile | safe }}" >
+			<meta name="twitter:title" content="{{ config.title | safe }}" >
+			<meta name="twitter:description" conent="{{ config.description | safe }}">
+		{% endblock twitter_card %}
+	{% endif %}
+
+	<title>{% block title %}{% endblock title %}{{ config.title }}</title>
+</head>
+	<body>
+		<div class="wrapper">
+			<div class="color-block">
+				<div class="color color1"></div>
+				<div class="color color2"></div>
+				<div class="color color3"></div>
+				<div class="color color4"></div>
+				<div class="color color5"></div>
+				<div class="color color6"></div>
+			</div>
+			<header>
+				<h1><a class="title-link rainbow-wheel" href="{{ config.base_url }}">{{ config.title }}</a></h1>
+				<span class="nav-spacer"></span>
+				<span class="link-container">
+					{% if config.extra.menus %}
+						{% for menu_item in config.extra.menus %}
+							<a href="{{ menu_item.url | replace(from="$BASE_URL", to=config.base_url) | safe }}" class="">{{ menu_item.name }}</a>
+						{% endfor %}
+					{% endif %}
+					<a href="{{config.base_url | safe }}/blog" class="">Blog</a>
+				</span>
+			</header>
+			<hr class="seperator" />
+			<main>
+				{% block content %}
+				<article class="">
+					{{ section.content | safe }}
+				</article>
+				{% endblock content %}
+			</main>
+			<footer>
+				<div class="color-block">
+					<div class="color color1"></div>
+					<div class="color color2"></div>
+					<div class="color color3"></div>
+					<div class="color color4"></div>
+					<div class="color color5"></div>
+					<div class="color color6"></div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% block content %}
+{% if paginator.pages %}
+<h2>Articles by date</h2>
+{% for page in paginator.pages %}
+	<div class="blog-item">
+		<span class="date rainbow-wheel">{{ page.date }}</span>
+		<span class="title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></span>
+	</div>
+{% endfor %}
+{% else %}
+	<span class="rainbow-wheel big-center ">No articles currently, sorry.</span>
+{% endif %}
+{% endblock content %}

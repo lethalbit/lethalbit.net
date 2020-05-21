@@ -1,0 +1,6 @@
+<div class="svg-container">
+	{{ load_data(path="static/" ~ name) | safe }}
+	{% if caption %}
+		<small class="caption">{{ caption }}</small>
+	{% endif %}
+</div>

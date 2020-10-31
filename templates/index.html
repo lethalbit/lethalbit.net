@@ -29,9 +29,9 @@
 		<link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) | safe }}">
 	{% endblock css %}
 
-	{% if config.generate_rss %}
-		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") | safe }}" title="{{ config.title }} - Latest Posts">
-	{% endif %}
+	{% block rss %}
+		<link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}" title="{{ config.title }} - Latest Posts">
+	{% endblock %}
 
 	{% if config.extra.enable_twitter_card %}
 		{% block twitter_card %}

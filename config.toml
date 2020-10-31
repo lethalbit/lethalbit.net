@@ -11,7 +11,7 @@ taxonomies = [
     {name = "categories", rss = true},
     {name = "tags", rss = true},
 ]
-generate_rss = true
+generate_feed = true
 [extra]
 author = "Aki"
 

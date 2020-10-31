@@ -19,8 +19,8 @@ Everything in this list I currently own and use regularly.
 ## Streaming Setup
 
 * mid-2015 Mac Mini Running Manjaro Linux
-* [ClonerAlliance Flint 4KP](https://www.cloner-alliance.com/cloneralliance-flint-4kp/) for Microscope HDMI capture
-* No mic or face / bench camera
+* [ClonerAlliance Flint 4KP](https://www.cloner-alliance.com/cloneralliance-flint-4kp/) for Microscope / DSLR HDMI capture
+* [Focusrite Scarlett 2i2 audio interface & CM25 condenser mic](https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-2i2)
 
 ## Test / Inspection / Programming
 
@@ -48,6 +48,7 @@ Everything in this list I currently own and use regularly.
 * A set of random SMD tweezers off Amazon (get the Duratool [D00834](https://uk.farnell.com/duratool/d00834/tweezers-type-7a-sa-esd-115mm/dp/1616331) and [D00837](https://uk.farnell.com/duratool/d00837/tweezers-type-13-smd-sa-esd-120mm/dp/1616334?st=D00837) instead, more expensive but much better)
 * [Controleo3](https://www.whizoo.com/controleo3) equipped toaster oven for reflow. This is going to be replaced with custom firmware soon.
 * [HT-90X BGA Reballing Station](https://www.aliexpress.com/item/4000068654550.html)
+* [Hakko C1390C Omnivise](https://www.hakkousa.com/products/accessories/pcb-holders/omnivise-pcb-holder.html)
 
 ## Various Hand Tools
 
@@ -78,6 +79,13 @@ This list is by no means comprehensive, I've forgotten to add things and won't u
 * [dhex](https://www.dettus.net/dhex/)
 * [rink](https://github.com/tiffany352/rink-rs)
 
+## Photography
+
+My current photography equipment
+
+* [Nikon D5600 DSLR](https://www.nikonusa.com/en/nikon-products/product/dslr-cameras/d5600.html) with the following lenses.
+  * [Nikon AF-P DX NIKKOR 18-55mm f/3.5-5.6G](https://www.nikonusa.com/en/nikon-products/product/camera-lenses/af-p-dx-nikkor-18-55mm-f%252f3.5-5.6g-vr.html)
+  * [Nikon AF-S DX Micro-NIKKOR 40mm f/2.8G](https://www.nikonusa.com/en/nikon-products/product/camera-lenses/af-s-dx-micro-nikkor-40mm-f%252f2.8g.html)
 
 
 ## Current Setup
@@ -102,13 +110,9 @@ The following list is things I really want, but can't justify or afford, but rea
  * [Rigol DSA815-TG Spectrum Analyzer](https://www.rigolna.com/products/spectrum-analyzers/dsa800/)
  * [Rigol DM3058E Benchtop Multimeter](https://www.rigolna.com/products/digital-multimeters/dm3000/)
  * [Rigol DP832 Powersupply](https://www.rigolna.com/products/dc-power-loads/dp800/)
+ * Any 5GHz+ Oscilloscope for PCI-Express tomfoolery 
+ * PCI-Express passive interposer probe card & DAQ
 
-## Small Expensive Things
-
-These things cost multiples of thousands of dollars, and are not very heavy or big.
-
- * [Nikon D780](https://www.nikonusa.com/en/nikon-products/product/dslr-cameras/d780.html)
-   * [Micro-NIKKOR 55mm f/2.8 Macro Lens](https://www.nikonusa.com/en/nikon-products/product/camera-lenses/micro-nikkor-55mm-f%252f2.8.html)
 
 ## Big Expensive Things
 

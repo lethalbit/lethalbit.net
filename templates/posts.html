@@ -8,7 +8,7 @@
 	</span></h2>
 {% for page in paginator.pages %}
 	<div class="blog-item">
-		<span class="date rainbow-wheel">{{ page.date | date(timezone="America/New_York", format="%Y-%m-%d @ %H:%M") }}</span>
+		<span class="date rainbow-wheel">{{ page.date | date(timezone="America/New_York", format="%Y-%m-%d @&nbsp;%H:%M") | safe }}</span>
 		<span class="title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></span>
 	</div>
 {% endfor %}

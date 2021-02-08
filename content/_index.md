@@ -2,13 +2,14 @@
 template = "index.html"
 +++
 
-<center><h2>I'm Aki, I'm a Software Engineer</h2></center>
+<center><h2>Hi! I'm Aki, a Software Engineer</h2></center>
 
-Among many things, I enjoy doing low-level and systems development, mainly using `C` and `C++` with bits of `x86_64` assembly, some `Rust`, and a bit of `Python` thrown into the mix. As such, that's where my primary wealth of experience is.
+I deal mainly with low-level and systems programming on Unix and Unix-like platforms with a bit of embedded and HDL thrown in the mix. The tools of choice being chiefly `C++`, and `Python` for the majority of my work, but I also use `C`, `Rust`, and the assembly language of choice for the platform as well. In HDL land for FPGAs and the like I mainly use [nmigen](https://github.com/nmigen/nmigen), but I can also handle Verilog if I must.
 
-I also dabble with electrical engineering as well, one example being [`lethalcard`](https://github.com/lethalbit/lethalcard), an R&D / audit tool designed primarily with SmartCards (ISO/IEC 7816) in mind, however there are plans for various expansions to provide support for contact-less an magnetic stripe cards as well.
+I also like to dabble with hardware design, one of my larger projects is [lethallink](https://github.com/lethalbit/lethallink), a PCIe based DMA platform for use in whole-system and stop-the-world debugging. I'm also looking into ASIC tapeout and hope to get on a skywater shuttle if those stick around.
 
-On the side I tend to read a lot of manga and do some hardware and software reverse engineering for fun. I also keep a bit of a [lab notebook/blog](/blog) with various musings that you can check out, and my [equipment list](/equipment) which I try to keep updated with my current lab setup.
+
+On the side I tend to read a lot of manga and do some hardware and software reverse engineering for fun. The largest of my RE projects is [Nox](https://github.com/lethalbit/Nox), a collection of FOSS tools to target the Agilent PCIe analyzers. I also keep a bit of a [lab notebook/blog](/blog) with various musings that you can check out, and my [equipment list](/equipment) which I try to keep updated with my current lab setup.
 
 <center>If you wish to get in contact with me, you can do so via one of the sites below, CV is available upon request.</center>
 <div class="home-links">

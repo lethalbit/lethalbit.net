@@ -32,6 +32,15 @@ Everything in this list I currently own and use regularly.
    * [LED-144W-ZK](https://www.amscope.com/white-adjustable-144-led-ring-light-illuminator-for-stereo-microscope-camera.html)
 * [Saleae Logic Pro 8, 8 Channel logic analyzer](https://www.saleae.com/)
 * [Rigol DS1054Z Digital Storage Oscilloscope](https://www.rigolna.com/products/digital-oscilloscopes/1000z/)
+* [Rigol DSA815-TG Spectrum Analyzer](https://www.rigolna.com/products/spectrum-analyzers/dsa800/)
+* [Agilent E4406A VSA Transmitter Tester](https://www.keysight.com/en/pd-1000002790%3Aepsg%3Apro-pn-E4406A/vsa-transmitter-tester-7-mhz-to-4-ghz)
+* 2x [Agilent N5540A 2-Slot Protocol Analyzer Chassis](http://literature.cdn.keysight.com/litweb/pdf/5989-1531EN.pdf)
+  * Agilent N5315A PCIe 1.0/2.0 x8 Interposer
+  * 2x Agilent N5306A PCIe 1.0/2.0 x8 Protocol Analyzer
+  * Agilent E2947-66408 E2947A PCIe 1.0 x8 Interposer
+  * Agilent N5305A PCIe 1.0 Protocol Analyzer
+  * Agilent N5305A PCIe 1.0 Protocol Exerciser
+* [Keithley 2000 6.5-Digit Multimeter](https://www.tek.com/tektronix-and-keithley-digital-multimeter/keithley-2000-series-6-digit-multimeter-scanning)
 * [TL866CS Minipro IC Programmer](http://www.autoelectric.cn/en/tl866_main.html)
 * [Bus Pirate v3.6A](https://www.sparkfun.com/products/12942)
 * [Identiv SCM SCL3711](https://www.identiv.com/products/smart-card-readers/rfid-nfc-contactless/scl3711/)
@@ -107,7 +116,6 @@ The following list is things I really want, but can't justify or afford, but rea
  * [Nikon Camera Adapter for Microscope](https://www.amscope.com/accessories/camera/nikon-slr-dslr-camera-adapter-for-microscopes.html)
 
 ## Test / Measurement
- * [Rigol DSA815-TG Spectrum Analyzer](https://www.rigolna.com/products/spectrum-analyzers/dsa800/)
  * [Rigol DM3058E Benchtop Multimeter](https://www.rigolna.com/products/digital-multimeters/dm3000/)
  * [Rigol DP832 Powersupply](https://www.rigolna.com/products/dc-power-loads/dp800/)
  * Any 5GHz+ Oscilloscope for PCI-Express tomfoolery 

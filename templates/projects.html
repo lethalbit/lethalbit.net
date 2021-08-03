@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% block title %} | Projects{% endblock title %}
+{% block content %}
+{% if paginator.pages %}
+<h2>Projects</h2>
+<span>The following are a collection of projects I'm proud of, for all my technical musings, see my <a href="https://github.com/lethalbit">GitHub</a> account.</span>
+<div class="project-container">
+	{% for page in paginator.pages %}
+		<div class="project">
+			<span class="title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></span>
+			<span class="description">{{ page.extra.description }}</span>
+			<div class="tags">
+				{% for tag in page.taxonomies.tags %}
+					<span class="tag">{{ tag }}</span>
+				{% endfor %}
+			</div>
+		</div>
+	{% endfor %}
+</div>
+
+{% else %}
+	<span class="rainbow-wheel big-center">:nya_a:</span>
+{% endif %}
+
+{% endblock content %}

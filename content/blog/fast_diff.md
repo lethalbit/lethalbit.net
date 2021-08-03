@@ -1,4 +1,6 @@
 +++
+template = "post.html"
+
 title = "Fast parallel sliding-window based binary diff"
 date = 2020-10-21T04:27:35-05:00
 draft = false

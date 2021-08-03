@@ -39,7 +39,7 @@
 		{% endblock twitter_card %}
 	{% endif %}
 
-	<title>404 - Not Found:{{ config.title }}</title>
+	<title>404 - Not Found: {{ config.title }}</title>
 </head>
 	<body>
 		<div class="wrapper">
@@ -55,17 +55,17 @@
 				<h1><a class="title-link" href="{{ config.base_url }}">{{ config.title }}</a></h1>
 				<span class="nav-spacer"></span>
 				<span class="link-container">
-					{% if config.extra.menus %}
-						{% for menu_item in config.extra.menus %}
-							<a href="{{ menu_item.url | replace(from="$BASE_URL", to=config.base_url) | safe }}" class="">{{ menu_item.name }}</a>
-						{% endfor %}
-					{% endif %}
+					<a href="{{ config.base_url | safe }}/projects" class="">Projects</a>
+					<a href="{{ config.base_url | safe }}/blog" class="">Blog</a>
 				</span>
 			</header>
 			<hr class="seperator" />
 			<main>
 				<span class="big-text">The page you were looking for can't be found</span>
 				<span class="rainbow">Why not stay a while?</span>
+				<span class="yt-wrapper">
+					<iframe src="https://www.youtube.com/embed/613924SyZLY" title="YouTube video player" frameborder="0" allow="" allowfullscreen></iframe>
+				</span>
 			</main>
 			<footer>
 				<div class="color-block">
@@ -76,6 +76,13 @@
 					<div class="color color5"></div>
 					<div class="color color6"></div>
 				</div>
+				<span class="link-container">
+					{% if config.extra.menus %}
+						{% for menu_item in config.extra.menus %}
+							<a target="_blank"  href="{{ menu_item.url | replace(from="$BASE_URL", to=config.base_url) | safe }}" class="">{{ menu_item.name }}</a>
+						{% endfor %}
+					{% endif %}
+				</span>
 			</footer>
 		</div>
 	</body>

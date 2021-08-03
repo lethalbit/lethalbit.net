@@ -4,7 +4,7 @@ description = "Various ramblings from Aki"
 sort_by = "date"
 default_language = "en"
 compile_sass = true
-highlight_code = true
+
 build_search_index = false
 paginate_by = 5
 taxonomies = [
@@ -26,5 +26,8 @@ menus = [
     {url = "https://github.com/lethalbit", name = "Github"},
     {url = "https://twitter.com/lethalbit", name = "Twitter"},
     {url = "https://gensoukyou.jp.net/@lethalbit", name = "Misskey"},
-
 ]
+
+[markdown]
+highlight_code = true
+external_links_target_blank = true

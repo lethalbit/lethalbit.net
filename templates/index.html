@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="{{ config.description }}">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="{{ config.description }}">
 
-	<link rel="stylesheet" href="">
+		<link rel="stylesheet" href="">
 
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
 
-	{% if config.extra.fediverse_profile %}
-		<link rel="me" href="{{ config.extra.fediverse_profile | safe }}">
-	{% endif %}
+		{% if config.extra.fediverse_profile %}
+			<link rel="me" href="{{ config.extra.fediverse_profile | safe }}">
+		{% endif %}
 
-	{% if config.extra.twitter_profile %}
-		<link rel="me" href="https://twitter.com/{{ config.extra.twitter_profile | safe }}">
-	{% endif %}
+		{% if config.extra.twitter_profile %}
+			<link rel="me" href="https://twitter.com/{{ config.extra.twitter_profile | safe }}">
+		{% endif %}
 
-	{% if config.extra.github_profile %}
-		<link rel="me" href="https://github.com/{{ config.extra.github_profile | safe }}">
-	{% endif %}
+		{% if config.extra.github_profile %}
+			<link rel="me" href="https://github.com/{{ config.extra.github_profile | safe }}">
+		{% endif %}
 
-	{% block css %}
-		<link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) | safe }}">
-	{% endblock css %}
+		{% block css %}
+			<link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) | safe }}">
+		{% endblock css %}
 
-	{% block rss %}
-		<link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}" title="{{ config.title }} - Latest Posts">
-	{% endblock %}
+		{% block rss %}
+			<link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}" title="{{ config.title }} - Latest Posts">
+		{% endblock %}
 
-	{% if config.extra.enable_twitter_card %}
-		{% block twitter_card %}
-			<meta name="twitter:card" content="sumary_large_image" >
-			<meta name="twitter:creator" content="{{ config.extra.twitter_profile | safe }}" >
-			<meta name="twitter:title" content="{{ config.title | safe }}" >
-			<meta name="twitter:description" conent="{{ config.description | safe }}">
-		{% endblock twitter_card %}
-	{% endif %}
+		{% if config.extra.enable_twitter_card %}
+			{% block twitter_card %}
+				<meta name="twitter:card" content="sumary_large_image" >
+				<meta name="twitter:creator" content="{{ config.extra.twitter_profile | safe }}" >
+				<meta name="twitter:title" content="{{ config.title | safe }}" >
+				<meta name="twitter:description" conent="{{ config.description | safe }}">
+			{% endblock twitter_card %}
+		{% endif %}
 
-	<title>{{ config.title }}{% block title %}{% endblock title %}</title>
-</head>
+		<title>{{ config.title }}{% block title %}{% endblock title %}</title>
+	</head>
 	<body>
 		<div class="wrapper">
 			<div class="color-block">

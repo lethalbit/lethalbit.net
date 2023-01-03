@@ -8,19 +8,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="{{ config.description }}">
 
-	<link rel="stylesheet" href="">
 
-	{% if config.extra.fediverse_profile %}
-		<link rel="me" href="{{ config.extra.fediverse_profile | safe }}">
-	{% endif %}
+	<link rel="me" href="https://chaos.social/@lethalbit">
+	<link rel="me" href="https://vt.social/@lethalbit">
+	<link rel="me" href="https://gensoukyou.jp.net/@lethalbit">
+	<link rel="me" href="https://twitter.com/lethalbit">
+	<link rel="me" href="https://github.com/lethalbit">
 
-	{% if config.extra.twitter_profile %}
-		<link rel="me" href="https://twitter.com/{{ config.extra.twitter_profile | safe }}">
-	{% endif %}
-
-	{% if config.extra.github_profile %}
-		<link rel="me" href="https://github.com/{{ config.extra.github_profile | safe }}">
-	{% endif %}
 
 	{% block css %}
 		<link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) | safe }}" >
@@ -30,14 +24,12 @@
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") | safe }}" title="{{ config.title }} - Latest Posts">
 	{% endif %}
 
-	{% if config.extra.enable_twitter_card %}
-		{% block twitter_card %}
-			<meta name="twitter:card" content="sumary_large_image" >
-			<meta name="twitter:creator" content="{{ config.extra.twitter_profile | safe }}" >
-			<meta name="twitter:title" content="{{ config.title }}" >
-			<meta name="twitter:description" conent="{{ config.description }}">
-		{% endblock twitter_card %}
-	{% endif %}
+	{% block twitter_card %}
+		<meta name="twitter:card" content="sumary_large_image" >
+		<meta name="twitter:creator" content="https://twitter.com/lethalbit" >
+		<meta name="twitter:title" content="{{ config.title | safe }}" >
+		<meta name="twitter:description" content="{{ config.description | safe }}">
+	{% endblock twitter_card %}
 
 	<title>404 - Not Found: {{ config.title }}</title>
 </head>

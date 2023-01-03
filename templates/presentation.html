@@ -12,32 +12,27 @@
 
 		<link rel="stylesheet" href="{{ get_url(path="presentation.css", trailing_slash=false) | safe }}">
 
-		{% if config.extra.fediverse_profile %}
-			<link rel="me" href="{{ config.extra.fediverse_profile | safe }}">
-		{% endif %}
 
-		{% if config.extra.twitter_profile %}
-			<link rel="me" href="https://twitter.com/{{ config.extra.twitter_profile | safe }}">
-		{% endif %}
-
-		{% if config.extra.github_profile %}
-			<link rel="me" href="https://github.com/{{ config.extra.github_profile | safe }}">
-		{% endif %}
-
+		<link rel="me" href="https://chaos.social/@lethalbit">
+		<link rel="me" href="https://vt.social/@lethalbit">
+		<link rel="me" href="https://gensoukyou.jp.net/@lethalbit">
+		<link rel="me" href="https://twitter.com/lethalbit">
+		<link rel="me" href="https://github.com/lethalbit">
 
 		<title>{{ page.title }}</title>
 
 		{% block twitter_card %}
 			<meta name="twitter:card" content="sumary_large_image" >
-			<meta name="twitter:creator" content="{{ config.extra.twitter_profile | safe }}" >
+			<meta name="twitter:creator" content="https://twitter.com/lethalbit" >
 			<meta name="twitter:title" content="{{ page.title | safe }}" >
-			<meta name="twitter:description" conent="{{ page.extra.description | safe}}">
+			<meta name="twitter:description" content="{{ page.extra.description | safe}}">
 			{% if page.extra.banner_img %}
 			<meta name="twitter:image" content="{{ get_url(path=page.extra.banner_img) | safe }}">
 			{% endif %}
 		{% endblock twitter_card %}
 	</head>
 	<body>
+		<img class="peek" src="/img/presentations/aki_peek.png" />
 		<div class="reveal">
 			<div class="slides">
 				{% if page.extra.generate_title %}

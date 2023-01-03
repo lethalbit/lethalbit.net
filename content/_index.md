@@ -4,12 +4,12 @@ template = "index.html"
 
 <center><h2>Hi! I'm Aki, a Software Engineer</h2></center>
 
-I deal mainly with low-level and systems programming on Unix and Unix-like platforms with a bit of embedded and HDL thrown in the mix. The tools of choice being chiefly `C++`, and `Python` for the majority of my work, but I also use `C`, `Rust`, and the assembly language of choice for the platform as well. In HDL land for FPGAs and the like I mainly use [nmigen](https://github.com/nmigen/nmigen), but I can also handle Verilog if I must.
+I deal mainly with low-level and systems programming on Unix and Unix-like platforms with a bit of embedded and HDL thrown in the mix. The tools of choice being chiefly `C++`, and `Python` for the majority of my work, but I also use `C`, `Rust`, and the assembly language of choice for the platform as well. In HDL land for FPGAs and the like I mainly use [Torii](https://torii.shmdn.link), but I can also handle Verilog if I must.
 
-I also like to dabble with hardware design, one of my larger projects is [lethallink](https://github.com/lethalbit/lethallink), a PCIe based DMA platform for use in whole-system and stop-the-world debugging. I'm also looking into ASIC tapeout and hope to get on a skywater shuttle if those stick around.
+I also like to mess around with hardware design, my largest hardware project is [Squishy](https://github.com/lethalbit/squishy), a SCSI multi-tool for interacting with SCSI devices from a modern system, A lot of engineering time and effort has gone into it, and [I even did a small lightning talk about it](https://www.youtube.com/watch?v=NfSslIk9JHs) for [!!Con](https://bangbangcon.com/)
 
 
-On the side I tend to read a lot of manga and do some hardware and software reverse engineering for fun. The largest of my RE projects is [Nox](https://github.com/lethalbit/Nox), a collection of FOSS tools to target the Agilent PCIe analyzers. I also keep a bit of a [lab notebook/blog](/blog) with various musings that you can check out, and my [equipment list](/equipment) which I try to keep updated with my current lab setup.
+On the side I tend to read a lot of manga and do some hardware and software reverse engineering for fun. I also keep a bit of a [lab notebook/blog](/blog) with various musings that you can check out, and my [equipment list](/equipment) which I try to keep updated with my current lab setup.
 
 <center>If you wish to get in contact with me, you can do so via one of the sites below, CV is available upon request.</center>
 <div class="home-links">
@@ -28,7 +28,7 @@ On the side I tend to read a lot of manga and do some hardware and software reve
 		</a>
 	</span>
 	<span class="link">
-		<a rel="me" title="Follow me on Misskey" href="https://gensoukyou.jp.net/@lethalbit" class="mastodon">
+		<a rel="me" title="Follow me on Mastodon" href="https://chaos.social/@lethalbit" class="mastodon">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
 				<path d="M8.004 0A7.996 7.996 0 0 0 2.35 2.342 7.996 7.996 0 1 0 13.658 13.65 7.996 7.996 0 0 0 8.004 0zm0 4.478h1.712c-.305.215-.42.816-.433 1.18v3.33c0 .71-.57 1.28-1.28 1.28-.71 0-1.28-.57-1.28-1.28v-3.23c0-.71.57-1.28 1.28-1.28zm-.008.832c-.247 0-.448.2-.448.448 0 .247.2.448.448.448.247 0 .448-.2.448-.448 0-.247-.2-.448-.448-.448zm-4.462.126c.708 0 1.28.57 1.28 1.28v3.296c.014.366.128.967.433 1.18H3.534c-.71 0-1.28-.57-1.28-1.278V6.716c0-.71.57-1.28 1.28-1.28zm8.94 0c.71 0 1.28.57 1.28 1.28v3.198c0 .71-.57 1.28-1.28 1.28h-1.712c.305-.215.42-.816.433-1.182V6.716c0-.71.57-1.28 1.28-1.28zm-8.947.833c-.248 0-.448.2-.448.44s.2.444.44.444.444-.2.444-.447-.2-.448-.447-.448zm8.955 0c-.247 0-.448.2-.448.44s.2.444.448.444c.247 0 .448-.2.448-.447s-.2-.448-.448-.448zm-4.486.64c-.247 0-.448.2-.448.44s.2.45.448.45c.247 0 .448-.2.448-.45s-.2-.45-.448-.45zm-4.47.95c-.247 0-.447.2-.447.45s.2.45.44.45.444-.2.444-.45-.2-.45-.447-.45zm8.956 0c-.247 0-.448.2-.448.45s.2.45.448.45c.247 0 .448-.2.448-.45s-.2-.45-.448-.45zm-4.486.64c-.247 0-.448.2-.448.45s.2.45.448.45c.247 0 .448-.2.448-.45s-.2-.45-.448-.45zm-4.47.96c-.247 0-.447.2-.447.444s.2.45.44.45.444-.2.444-.45-.2-.447-.447-.447zm8.956 0c-.247 0-.448.2-.448.444s.2.45.448.45c.247 0 .448-.2.448-.45s-.2-.447-.448-.447z"></path>
 			</svg>

@@ -15,17 +15,10 @@ generate_feed = true
 [extra]
 author = "Aki"
 
-fediverse_profile = "https://gensoukyou.jp.net/@lethalbit"
-twitter_profile = "lethalbit"
-github_profile = "lethalbit"
-
-enable_twitter_card = true
-
-# The menus to show in the header
 menus = [
     {url = "https://github.com/lethalbit", name = "Github"},
     {url = "https://twitter.com/lethalbit", name = "Twitter"},
-    {url = "https://gensoukyou.jp.net/@lethalbit", name = "Misskey"},
+    {url = "https://chaos.social/@lethalbit", name = "Mastodon"},
 ]
 
 [markdown]

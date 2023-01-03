@@ -5,7 +5,7 @@ title = "squishy"
 
 [taxonomies]
 categories = ["Projects"]
-tags = ["Hardware", "FPGA", "Legacy", "C++", "nMigen"]
+tags = ["Hardware", "FPGA", "Legacy", "C++", "Torii"]
 
 [extra]
 description = "SCSI-1 HVD to USB Peripheral"

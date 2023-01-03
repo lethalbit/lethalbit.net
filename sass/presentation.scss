@@ -8,6 +8,13 @@
 $text_font: 'Noto Sans JP', sans-serif;
 $code_font: 'Fira Code', monospace;
 
+img.peek {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 128px;
+}
+
 .reveal {
 	font-family: $text_font;
 	font-size: 1.4em;

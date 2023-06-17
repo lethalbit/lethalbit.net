@@ -2,7 +2,7 @@
 @import '_fonts.scss';
 
 @import '_theme_dark.scss';
-
+@import '_colors.scss';
 
 html, body {
 	font-family: $tty0_content_font;
@@ -35,7 +35,7 @@ html, body {
 
 a, a:visited {
 	font-family: $tty0_monspace_font;
-	color: $tty0_link_colour;
+	color: $color_18;
 	text-decoration: none;
 	svg {
 		fill: $tty0_link_colour;
@@ -85,16 +85,19 @@ img {
 	flex-direction: row;
 	font-size: 1.3em;
 	font-family: $tty0_monspace_font;
+	padding-bottom: 1em;
 
 	span {
 		margin-left: 1.2em;
 		display: inline-block;
 	}
+
 	.date {
 		min-width: 160px;
 	}
-	.title {
 
+	.title {
+		max-width: 600px;
 	}
 }
 

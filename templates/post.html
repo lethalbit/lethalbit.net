@@ -3,7 +3,7 @@
 {% block twitter_card %}
 	<meta name="twitter:card" content="summary_large_image" >
 	<meta name="twitter:creator" content="https://twitter.com/lethalbit" >
-	<meta name="twitter:title" content="{{ page.title | safe }} {{ config.title | safe }}" >
+	<meta name="twitter:title" content="{{ page.title | safe }} - {{ config.title | safe }}" >
 	<meta name="twitter:description" content="{{ page.extra.description | safe}}">
 	{% if page.extra.banner_img %}
 	<meta name="twitter:image" content="{{ get_url(path=page.extra.banner_img) | safe }}">
@@ -14,7 +14,7 @@
 <article class="post">
 	{% if page.extra.banner_img %}
 		<div class="cover-image">
-			<img class="cover" src="{{ page.extra.banner_img | safe }}" alt="">
+			<img class="cover" src="{{ page.extra.banner_img | safe }}" alt="" loading="lazy">
 			{% if page.extra.banner_src %}
 				<small class="cover-source">Cover Image: {{ page.extra.banner_src | safe }}</small>
 			{% endif %}

@@ -4,7 +4,7 @@
 {% block twitter_card %}
 	<meta name="twitter:card" content="sumary_large_image" >
 	<meta name="twitter:creator" content="https://twitter.com/lethalbit" >
-	<meta name="twitter:title" content="{{ page.title | safe }} {{ config.title | safe }}" >
+	<meta name="twitter:title" content="{{ page.title | safe }} - {{ config.title | safe }}" >
 	<meta name="twitter:description" content="{{ page.extra.description | safe}}">
 	{% if page.extra.banner_img %}
 	<meta name="twitter:image" content="{{ get_url(path=page.extra.banner_img) | safe }}">

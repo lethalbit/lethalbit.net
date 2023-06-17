@@ -14,7 +14,7 @@
 <article class="page">
 	{% if page.extra.banner_img %}
 		<div class="cover-image">
-			<img class="cover" src="{{ page.extra.banner_img | safe }}" alt="">
+			<img class="cover" src="{{ page.extra.banner_img | safe }}" alt="" loading="lazy">
 			{% if page.extra.banner_src %}
 				<small class="cover-source">Cover Image: {{ page.extra.banner_src | safe }}</small>
 			{% endif %}

@@ -16,7 +16,7 @@
 
 
 		{% block css %}
-			<link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) | safe }}">
+			<link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) | safe }}?{{ get_hash(path="site.css", sha_type=256, base64=true) | safe }}">
 		{% endblock css %}
 
 		{% block rss %}

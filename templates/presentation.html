@@ -7,7 +7,7 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="{{ get_url(path="presentation.css", trailing_slash=false) | safe }}">
+		<link rel="stylesheet" href="{{ get_url(path="presentation.css", trailing_slash=false) | safe }}?{{ get_hash(path="presentation.css", sha_type=256, base64=true) | safe }}">
 
 
 		<link rel="me" href="https://chaos.social/@lethalbit">

@@ -26,6 +26,22 @@ Hey! You should check these people out, they're really cool and much smarter tha
 			<td><a href="https://ds0.me/">gatecat</a></td>
 			<td>Genius FPGA kbity.</td>
 		</tr>
+		<tr>
+			<td><a href="https://www.amyspark.me/">Amy</a></td>
+			<td>Super talented and friendly, knows a whole lot about a whole lot!</td>
+		</tr>
+		<tr>
+			<td><a href="https://thephd.dev/">thephd</a></td>
+			<td>A supremely cool individual who is also the project editor for the C programming language.</td>
+		</tr>
+		<tr>
+			<td><a href="https://expiredpopsicle.com/">Kiri</a></td>
+			<td>A fellow nullptr::live member and super cool and smart snek!</td>
+		</tr>
+		<tr>
+			<td><a href="https://cohost.org/sirocyl">sirocyl</a></td>
+			<td>Cool systems and vintage computers person.</td>
+		</tr>
 	</tbody>
 </table>
 

@@ -4,12 +4,12 @@ template = "index.html"
 
 <center><h2>Hi! I'm Aki, a Software Engineer</h2></center>
 
-I deal mainly with low-level and systems programming on Unix and Unix-like platforms with a bit of embedded and HDL thrown in the mix. The tools of choice being chiefly `C++`, and `Python` for the majority of my work, but I also use `C`, `Rust`, and the assembly language of choice for the platform as well. In HDL land for FPGAs and the like I mainly use [Torii](https://torii.shmdn.link), but I can also handle Verilog if I must.
+I deal mainly with low-level and systems programming on Unix and Unix-like platforms with a bit of embedded and HDL thrown in the mix. The tools of choice being chiefly `C++`, and `Python` for the majority of my work, but I also use `C`, `Rust`, and the assembly language of choice for the platform as well. In HDL land for FPGAs and the like I mainly use [Torii](https://torii.shmdn.link), but I can also handle Verilog/SystemVerilog if I must.
 
-I also like to mess around with hardware design, my largest hardware project is [Squishy](https://github.com/lethalbit/squishy), a SCSI multi-tool for interacting with SCSI devices from a modern system, A lot of engineering time and effort has gone into it, and [I even did a small lightning talk about it](https://www.youtube.com/watch?v=NfSslIk9JHs) for [!!Con](https://bangbangcon.com/)
+I also like to mess around with hardware design, my largest hardware project is [Squishy](https://github.com/squishy-scsi/squishy), a SCSI multi-tool for interacting with SCSI devices from a modern system, A lot of engineering time and effort has gone into it, and [I even did a small lightning talk about it](https://www.youtube.com/watch?v=NfSslIk9JHs) for [!!Con](https://bangbangcon.com/)
 
 
-On the side I tend to read a lot of manga and do some hardware and software reverse engineering for fun. I also keep a bit of a [lab notebook/blog](/blog) with various musings that you can check out, and my [equipment list](/equipment) which I try to keep updated with my current lab setup.
+On the side I tend to read a lot of manga and do some hardware and software reverse engineering for fun. I also keep a bit of a [lab notebook/blog](/blog) with various musings that you can check out.
 
 I'm also a [VTuber](https://twitch.tv/akinyanya) who streams a bunch of stuff like software and hardware development, reverse engineering, and anything that catches my interest~ I'm part of the [nullptr::live](https://twitter.com/nullptr_live) VTuber group who has a lot of other cool members that also stream technical stuff!
 

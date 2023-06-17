@@ -736,6 +736,22 @@ span.big-text {
 	}
 }
 
-
+table.friends {
+	width: 100%;
+	font-size: 1.3em;
+	a:hover {
+		-webkit-animation: rainbow-kf 8s infinite;
+		-ms-animation: rainbow-kf 8s infinite;
+		animation: rainbow-kf 8s infinite;
+	}
+	tr {
+		background-color: $tty0_background_primary !important;
+	}
+	td {
+		border: none;
+		text-align: left;
+		vertical-align: top;
+	}
+}
 
 @import '_wavedrom_theme.scss';

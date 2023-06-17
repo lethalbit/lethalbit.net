@@ -11,6 +11,8 @@ I also like to mess around with hardware design, my largest hardware project is 
 
 On the side I tend to read a lot of manga and do some hardware and software reverse engineering for fun. I also keep a bit of a [lab notebook/blog](/blog) with various musings that you can check out, and my [equipment list](/equipment) which I try to keep updated with my current lab setup.
 
+I'm also a [VTuber](https://twitch.tv/akinyanya) who streams a bunch of stuff like software and hardware development, reverse engineering, and anything that catches my interest~ I'm part of the [nullptr::live](https://twitter.com/nullptr_live) VTuber group who has a lot of other cool members that also stream technical stuff!
+
 <center>If you wish to get in contact with me, you can do so via one of the sites below, CV is available upon request.</center>
 <div class="home-links">
 	<span class="link">

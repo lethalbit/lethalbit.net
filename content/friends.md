@@ -3,6 +3,7 @@ template = "page.html"
 
 title = "Friends"
 date = 2023-06-17T13:45:00-05:00
+updated = 2024-10-03T03:06:29-07:00
 
 [extra]
 description = ""
@@ -39,12 +40,16 @@ Hey! You should check these people out, they're really cool and much smarter tha
 			<td>A fellow nullptr::live member and super cool and smart snek!</td>
 		</tr>
 		<tr>
-			<td><a href="https://cohost.org/sirocyl">sirocyl</a></td>
+			<td><a href="https://significantb.it/">sirocyl</a></td>
 			<td>Cool systems and vintage computers person.</td>
 		</tr>
 		<tr>
 			<td><a href="https://sludge.network/">sludge</a></td>
 			<td>A very cool developer who has lovely taste.</td>
+		</tr>
+		<tr>
+			<td><a href="https://github.com/Nykseli">Duck</a></td>
+			<td>A comfy and smart duck who does all kinds of cool things.</td>
 		</tr>
 	</tbody>
 </table>

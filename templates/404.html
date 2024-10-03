@@ -47,8 +47,10 @@
 				<h1><a class="title-link" href="{{ config.base_url }}">{{ config.title }}</a></h1>
 				<span class="nav-spacer"></span>
 				<span class="link-container">
-					<a href="{{ config.base_url | safe }}/projects" class="">Projects</a>
-					<a href="{{ config.base_url | safe }}/blog" class="">Blog</a>
+					{# <a href="{{ config.base_url | safe }}/projects" class="">Projects</a> #}
+					<a href="{{ config.base_url | safe }}/posts" class="">Blog</a>
+					<a href="{{ config.base_url | safe }}/notes" class="">Lab Notebook</a>
+					<a href="{{ config.base_url | safe}}/friends" class="">Friends</a>
 				</span>
 			</header>
 			<hr class="seperator" />

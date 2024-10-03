@@ -63,6 +63,27 @@ code, pre {
 	overflow: overlay;
 	font-size: 0.9em;
 	border-radius: 5px;
+	table {
+		margin: 0;
+		padding: 0;
+		tbody {
+			tr:nth-child(odd), table tbody tr:nth-child(2n+1) {
+				background-color: transparent;
+			}
+		}
+		td:nth-of-type(1) {
+			text-align: left;
+			padding: 0 1em 0 0;
+		}
+		td:nth-of-type(2) {
+			text-align: left;
+			border-left: 1px solid $tty0_accent_2;
+			padding: 0 0 0 1em;
+		}
+	}
+	table, tbody, tr, td {
+		border: none;
+	}
 
 }
 
@@ -70,7 +91,10 @@ code {
 	padding: 0.1em;
 	display: inline;
 	color: $tty0_forground_secondary;
+}
 
+pre code {
+	padding: 0;
 }
 
 img {
@@ -83,7 +107,7 @@ img {
 .blog-item {
 	display: flex;
 	flex-direction: row;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	font-family: $tty0_monspace_font;
 	padding-bottom: 1em;
 
@@ -98,6 +122,20 @@ img {
 
 	.title {
 		max-width: 600px;
+	}
+}
+
+nav.pagination {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1em;
+	a.previous {
+		flex-grow: 1;
+	}
+
+	a.next {
+		flex-grow: 4;
+		text-align: right;
 	}
 }
 
@@ -297,18 +335,43 @@ span.yt-wrapper {
 	}
 }
 
+.link-container {
+	a {
+		padding-left: 0.5em;
+		text-decoration: underline;
+		text-decoration-style: wavy;
+		text-underline-offset: 0.5em;
+	}
+	a:hover {
+		text-decoration-style: dashed;
+	}
+
+	a:nth-of-type(2n) {
+		color: $tty0_accent_1;
+	}
+
+	a:nth-of-type(3n) {
+		color: $tty0_accent_2;
+	}
+
+	a:nth-of-type(4n) {
+		color: $tty0_accent_3;
+	}
+
+	a:nth-of-type(5n) {
+		color: $tty0_accent_4;
+	}
+
+
+	display: flex;
+	padding: 1em 0;
+	font-family: $tty0_monspace_font;
+}
+
 header {
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
-	.link-container {
-		a {
-			padding-left: 0.5em;
-		}
-		display: flex;
-		padding: 1em 0;
-		font-family: $tty0_monspace_font;
-	}
 	.nav-spacer {
 		display: block;
 		flex-grow: 2;
@@ -320,6 +383,10 @@ header {
 		text-decoration: none;
 		color: $tty0_forground_primary;
 	}
+}
+
+footer {
+
 }
 
 .big-center {
@@ -372,27 +439,13 @@ article {
 
 
 .color-block {
+	margin-top: 2em;
 	display: flex;
 	flex-direction: row;
 	height: 15px;
 	.color {
 		height: 100%;
 		flex-grow: 1;
-
-
-	}
-}
-footer {
-	.color-block {
-		margin-top: 2em;
-	}
-	.link-container {
-		a {
-			padding-left: 0.5em;
-		}
-		display: flex;
-		padding: 1em 0;
-		font-family: $tty0_monspace_font;
 	}
 }
 

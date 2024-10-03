@@ -7,10 +7,13 @@ compile_sass = true
 
 build_search_index = false
 taxonomies = [
-    {name = "categories", rss = true, paginate_by = 5},
-    {name = "tags", rss = true, paginate_by = 5},
+    { name = "topics", rss = true, paginate_by = 10 },
+    { name = "tags", rss = true, paginate_by = 10 },
 ]
 generate_feeds = true
+
+author = "Aki"
+
 [extra]
 author = "Aki"
 
@@ -23,3 +26,8 @@ menus = [
 [markdown]
 highlight_code = true
 external_links_target_blank = true
+bottom_footnotes = true
+
+[link_checker]
+internal_level = "error"
+external_level = "error"

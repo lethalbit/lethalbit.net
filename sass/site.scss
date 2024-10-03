@@ -368,10 +368,13 @@ span.yt-wrapper {
 	font-family: $tty0_monspace_font;
 }
 
+
 header {
-	display: flex;
-	flex-direction: row;
-	align-items: baseline;
+	@media screen and (min-width: 1000px) {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+	}
 	.nav-spacer {
 		display: block;
 		flex-grow: 2;
@@ -388,6 +391,7 @@ header {
 footer {
 
 }
+
 
 .big-center {
 	width: 100%;

@@ -3,10 +3,10 @@ template = "post.html"
 
 title = "Fast parallel sliding-window based binary diff"
 date = 2020-10-21T04:27:35-05:00
-draft = false
+draft = true
 
 [taxonomies]
-categories = ["Optimization"]
+topics = ["Optimization"]
 tags = ["GCC", "Math", "Linux", "AVX2"]
 
 [extra]
@@ -114,7 +114,7 @@ As mentioned in the section above, this is actually slower than the trivial loop
 
 ## The Sliding Windows
 
-Now that we have a method for differencing, we need to actually apply it to the file. This for the most part is easy, you just [`mmap(3)`](https://linux.die.net/man/2/mmap) the file into memory with it's size set to include any needed padding. 
+Now that we have a method for differencing, we need to actually apply it to the file. This for the most part is easy, you just [`mmap(3)`](https://linux.die.net/man/2/mmap) the file into memory with it's size set to include any needed padding.
 
 This gives us a single contiguous address space in which we can do the comparisons from. The address of each window is simply the base address of the `mmap(2)` plus the window ID multiplied by the window size. So window `0` will be at the base address plus `+0` and window `100` will be at `+3200`.
 
@@ -126,8 +126,8 @@ The core concept is that this is a sliding-window based differencing engine, as 
 
 This is done fairly easily, assuming the window size is \\(s\\), the number of windows is \\(\frac{F}{s}\\) where \\(F\\) is the size of the file padded to the nearest whole window size.
 
-Computing \\(F\\) is easy, first, take the modulo of the file size \\(f\\) and the window size \\(s\\), that computes the number of padding bytes needed to the nearest full window, which may also be \\(s\\) itself \\(p = f \bmod s\\). Then if \\(p\\) is the same size as \\(s\\) you just divide the two, otherwise add the padding to the file size then divide. 
-$$n = \left\\{      \begin{array}{lr}        p = s & : \frac{f}{s}\\\        p \ne s & : \frac{f + p}{s}      \end{array}    \right.$$ 
+Computing \\(F\\) is easy, first, take the modulo of the file size \\(f\\) and the window size \\(s\\), that computes the number of padding bytes needed to the nearest full window, which may also be \\(s\\) itself \\(p = f \bmod s\\). Then if \\(p\\) is the same size as \\(s\\) you just divide the two, otherwise add the padding to the file size then divide.
+$$n = \left\\{      \begin{array}{lr}        p = s & : \frac{f}{s}\\\        p \ne s & : \frac{f + p}{s}      \end{array}    \right.$$
 
 
 The following C++ code does the same as above
@@ -155,7 +155,7 @@ for (size_t row{}; row < window_count; row++) {
 }
 ```
 
-Now once the de-duplication has been done, we now have a huge list of window comparisons that are all fully unique. And from just the window ID, we can compute the offset of the window into the file we need to go for the data. So all that is left is to the actual comparisons 
+Now once the de-duplication has been done, we now have a huge list of window comparisons that are all fully unique. And from just the window ID, we can compute the offset of the window into the file we need to go for the data. So all that is left is to the actual comparisons
 
 ## Bringing It All Together
 

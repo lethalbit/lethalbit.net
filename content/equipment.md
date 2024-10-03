@@ -3,6 +3,7 @@ template = "page.html"
 
 title = "Aki's Lab equipment"
 date = 2020-05-17T13:39:07-05:00
+draft = true
 
 [extra]
 description = ""
@@ -118,7 +119,7 @@ The following list is things I really want, but can't justify or afford, but rea
 ## Test / Measurement
  * [Rigol DM3058E Benchtop Multimeter](https://www.rigolna.com/products/digital-multimeters/dm3000/)
  * [Rigol DP832 Powersupply](https://www.rigolna.com/products/dc-power-loads/dp800/)
- * Any 5GHz+ Oscilloscope for PCI-Express tomfoolery 
+ * Any 5GHz+ Oscilloscope for PCI-Express tomfoolery
  * PCI-Express passive interposer probe card & DAQ
 
 

@@ -9,7 +9,7 @@ I deal mainly with low-level and systems programming on Unix and Unix-like platf
 I also like to mess around with hardware design, my largest hardware project is [Squishy](https://github.com/squishy-scsi/squishy), a SCSI multi-tool for interacting with SCSI devices from a modern system, A lot of engineering time and effort has gone into it, and [I even did a small lightning talk about it](https://www.youtube.com/watch?v=NfSslIk9JHs) for [!!Con](https://bangbangcon.com/)
 
 
-On the side I tend to read a lot of manga and do some hardware and software reverse engineering for fun. I also keep a bit of a [lab notebook/blog](/blog) with various musings that you can check out.
+On the side I tend to read a lot of manga and do some hardware and software reverse engineering for fun. I started to keep a [lab notebook](/notes) about things with less pressure on making fully polished [blog  posts](/posts), so there will be fun musings in there more often than formal posts.
 
 I'm also a [VTuber](https://twitch.tv/akinyanya) who streams a bunch of stuff like software and hardware development, reverse engineering, and anything that catches my interest~ I'm part of the [nullptr::live](https://twitter.com/nullptr_live) VTuber group who has a lot of other cool members that also stream technical stuff!
 

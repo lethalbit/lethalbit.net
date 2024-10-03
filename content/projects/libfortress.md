@@ -3,8 +3,10 @@ template = "project.html"
 
 title = "libfortress"
 
+draft = true
+
 [taxonomies]
-categories = ["Projects"]
+topics = ["Projects"]
 tags = ["Library", "C++", "Debug"]
 
 [extra]

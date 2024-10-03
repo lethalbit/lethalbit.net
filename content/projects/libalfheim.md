@@ -3,8 +3,10 @@ template = "project.html"
 
 title = "libalfheim"
 
+draft = true
+
 [taxonomies]
-categories = ["Projects"]
+topics = ["Projects"]
 tags = ["Library", "C++", "Object Files"]
 
 [extra]

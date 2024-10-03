@@ -3,8 +3,10 @@ template = "project.html"
 
 title = "uwu-efi"
 
+draft = true
+
 [taxonomies]
-categories = ["Projects"]
+topics = ["Projects"]
 tags = ["SDK", "C++", "UEFI"]
 
 [extra]

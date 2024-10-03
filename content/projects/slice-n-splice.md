@@ -3,8 +3,10 @@ template = "project.html"
 
 title = "Slice N' Splice"
 
+draft = true
+
 [taxonomies]
-categories = ["Projects"]
+topics = ["Projects"]
 tags = ["Utility", "Object Files", "Debug"]
 
 [extra]

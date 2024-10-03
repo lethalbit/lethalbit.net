@@ -3,8 +3,10 @@ template = "project.html"
 
 title = "squishy"
 
+draft = true
+
 [taxonomies]
-categories = ["Projects"]
+topics = ["Projects"]
 tags = ["Hardware", "FPGA", "Legacy", "C++", "Torii"]
 
 [extra]

@@ -3,8 +3,10 @@ template = "project.html"
 
 title = "taperipper"
 
+draft = true
+
 [taxonomies]
-categories = ["Projects"]
+topics = ["Projects"]
 tags = ["Hardware"]
 
 [extra]

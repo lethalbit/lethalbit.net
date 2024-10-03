@@ -42,6 +42,10 @@ Hey! You should check these people out, they're really cool and much smarter tha
 			<td><a href="https://cohost.org/sirocyl">sirocyl</a></td>
 			<td>Cool systems and vintage computers person.</td>
 		</tr>
+		<tr>
+			<td><a href="https://sludge.network/">sludge</a></td>
+			<td>A very cool developer who has lovely taste.</td>
+		</tr>
 	</tbody>
 </table>
 

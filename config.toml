@@ -1,17 +1,16 @@
 base_url = "https://lethalbit.net"
 title = "cat /dev/aki"
 description = "Various ramblings from Aki"
-sort_by = "date"
+
 default_language = "en"
 compile_sass = true
 
 build_search_index = false
-paginate_by = 5
 taxonomies = [
-    {name = "categories", rss = true},
-    {name = "tags", rss = true},
+    {name = "categories", rss = true, paginate_by = 5},
+    {name = "tags", rss = true, paginate_by = 5},
 ]
-generate_feed = true
+generate_feeds = true
 [extra]
 author = "Aki"
 
